@@ -9,8 +9,7 @@ This repo contains the implementation of the work described in [Federated Unlear
   - [Federated Unlearning Setup](#federated-unlearning-setup)
   - [Projected Gradient Descent (PGD)](#Projected-Gradient-Descent-(PGD))
 - [Results](#results)
-- [Conclusions and Discussions](#conclusions-and-discussions)
-
+- 
 ## Abstract
 This project implements federated unlearning for sound data, adapting the methodology outlined in Federated Unlearning: How to Efficiently Erase a Client in FL? by Halimi et al. The focus is on evaluating the efficacy, fidelity, and computational efficiency of unlearning within federated learning environments. Unlike image data, sound data presents unique temporal and spectral challenges, which are addressed through specific preprocessing and analysis techniques. The approach effectively removes a client’s contribution from the global model while minimizing both computational and communication overhead.
 
@@ -26,6 +25,3 @@ This unlearning process involves maximizing the client’s empirical loss within
 
 ## Results
 The results compare models trained from scratch to those where federated unlearning has been applied. The unlearning procedure shows that the model can recover performance similar to that of a retrained model, without the need for costly retraining. Performance is maintained across nominal test datasets while the influence of compromised or backdoor data is efficiently removed. This confirms the feasibility of federated unlearning in sound data classification tasks.
-
-## Conclusions
-The project demonstrates that federated unlearning is an effective method for removing a client's contribution from a federated learning model. However, the unlearning process requires precise calibration of the distance from the reference model, which varies depending on the dataset. Setting this distance too high risks model divergence, while setting it too low may result in ineffective unlearning. Additionally, fine-tuning the process is challenging without access to the data that is to be forgotten, making careful testing in the post-training phase essential.
