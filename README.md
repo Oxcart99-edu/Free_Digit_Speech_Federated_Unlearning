@@ -9,7 +9,7 @@ This repo contains the implementation of the work described in [Federated Unlear
   - [Federated Unlearning Setup](#federated-unlearning-setup)
   - [Projected Gradient Descent (PGD)](#Projected-Gradient-Descent-(PGD))
 - [Results](#results)
-- 
+  
 ## Abstract
 This project implements federated unlearning for sound data, adapting the methodology outlined in Federated Unlearning: How to Efficiently Erase a Client in FL? by Halimi et al. The focus is on evaluating the capability of unlearning the contribution of a client within federated learning environments. Unlike image data used by Halimi et al, this application is based on sound data that presents different challenges, which are addressed through specific preprocessing and analysis techniques. The results demonstrate the effectiveness of the procedure in removing a client’s contribution from the global model while minimizing both computational and communication overhead.
 
